@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: mi-portafolio-java
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/health
+    autoDeploy: true

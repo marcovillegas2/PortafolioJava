@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio personal de desarrollo de software.">
+    <meta name="theme-color" content="#10131f">
+    <title>Mi portafolio | Desarrollador de software</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <a class="brand" href="#inicio" aria-label="Ir al inicio">
+            <span class="brand-mark">&lt;/&gt;</span>
+            <span id="brand-name">Mi portafolio</span>
+        </a>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+            <a href="#proyectos">Proyectos</a>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#contacto" class="nav-contact">Contacto <span aria-hidden="true">↗</span></a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero section-shell" id="inicio">
+            <div class="hero-copy">
+                <div class="availability"><span class="status-dot"></span> Disponible para oportunidades</div>
+                <p class="eyebrow">HOLA, SOY</p>
+                <h1><span id="hero-name">Tu Nombre</span><span class="accent-dot">.</span></h1>
+                <h2 id="hero-role">Estudiante y desarrollador de software</h2>
+                <p class="hero-description" id="hero-summary">
+                    Me interesa crear soluciones digitales que combinen funcionalidad, diseño y una buena experiencia de usuario.
+                </p>
+                <div class="hero-location"><span aria-hidden="true">⌖</span> <span id="hero-location">Lima, Perú</span></div>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#proyectos">Ver mis proyectos <span aria-hidden="true">↘</span></a>
+                    <a class="button button-secondary" id="cv-button" href="https://drive.google.com/" target="_blank" rel="noopener noreferrer">Ver CV <span aria-hidden="true">↗</span></a>
+                </div>
+                <div class="social-links" id="social-links" aria-label="Redes sociales"></div>
+            </div>
+            <div class="hero-visual">
+                <div class="visual-orbit orbit-one"></div>
+                <div class="visual-orbit orbit-two"></div>
+                <div class="profile-card">
+                    <div class="profile-card-top"><span></span><span></span><span></span><small>ABOUT_ME.java</small></div>
+                    <div class="profile-avatar" id="profile-initials">TN</div>
+                    <p class="code-line"><span class="code-purple">public class</span> <span class="code-blue">Developer</span> {</p>
+                    <p class="code-line indent"><span class="code-purple">String</span> name = <span class="code-green">"<span id="code-name">Tu Nombre</span>"</span>;</p>
+                    <p class="code-line indent"><span class="code-purple">String</span> focus = <span class="code-green">"Software"</span>;</p>
+                    <p class="code-line indent"><span class="code-purple">boolean</span> learning = <span class="code-orange">true</span>;</p>
+                    <p class="code-line">}</p>
+                    <div class="profile-card-bottom"><span class="mini-pulse"></span> Siempre aprendiendo algo nuevo</div>
+                </div>
+                <div class="floating-tag tag-java"><span class="tag-icon">☕</span> Java</div>
+                <div class="floating-tag tag-code"><span class="tag-icon">✦</span> Creative code</div>
+            </div>
+            <a class="scroll-cue" href="#proyectos"><span></span> Desliza para explorar</a>
+        </section>
+
+        <section class="section-shell projects-section" id="proyectos">
+            <div class="section-heading">
+                <div><p class="eyebrow">LO QUE HE CONSTRUIDO</p><h2>Proyectos <span class="gradient-text">destacados</span></h2></div>
+                <p class="section-intro">Una selección de trabajos y proyectos en los que he puesto en práctica mis conocimientos.</p>
+            </div>
+            <div class="projects-grid" id="projects-grid"></div>
+        </section>
+
+        <section class="about-section" id="sobre-mi">
+            <div class="section-shell about-grid">
+                <div class="about-heading"><p class="eyebrow">UN POCO SOBRE MÍ</p><h2>Detrás del<br><span class="gradient-text">código.</span></h2><div class="about-decoration">{ }</div></div>
+                <div class="about-content">
+                    <p class="about-lead" id="about-lead">Soy una persona curiosa, responsable y apasionada por la tecnología.</p>
+                    <p id="about-description">Me gusta aprender nuevas herramientas, resolver problemas y transformar ideas en soluciones útiles. Disfruto trabajar en equipo y asumir retos que me permitan seguir creciendo como desarrollador.</p>
+                    <div class="education-block">
+                        <div class="education-icon">⌂</div>
+                        <div><p class="eyebrow">FORMACIÓN</p><h3 id="education-title">Carrera o especialidad</h3><p id="education-place">Institución educativa</p><span id="education-period">En curso</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-shell skills-section" id="habilidades">
+            <div class="section-heading skills-heading">
+                <div><p class="eyebrow">TECNOLOGÍAS Y HERRAMIENTAS</p><h2>Mis <span class="gradient-text">habilidades</span></h2></div>
+                <p class="section-intro">Tecnologías que utilizo y continúo aprendiendo para desarrollar mejores soluciones.</p>
+            </div>
+            <div class="skills-list" id="skills-list"></div>
+        </section>
+
+        <section class="contact-section" id="contacto">
+            <div class="section-shell contact-grid">
+                <div class="contact-copy">
+                    <p class="eyebrow">¿TIENES UNA IDEA?</p>
+                    <h2>Hablemos<span class="accent-dot">.</span></h2>
+                    <p>Estoy abierto a conversar sobre proyectos, colaboraciones u oportunidades. Puedes escribirme por cualquiera de estos medios.</p>
+                    <div class="contact-methods" id="contact-methods"></div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <p class="form-title">Envíame un mensaje</p>
+                    <label for="sender-name">Tu nombre</label>
+                    <input id="sender-name" name="name" type="text" placeholder="¿Cómo te llamas?" required>
+                    <label for="sender-email">Tu correo</label>
+                    <input id="sender-email" name="email" type="email" placeholder="nombre@ejemplo.com" required>
+                    <label for="sender-message">Mensaje</label>
+                    <textarea id="sender-message" name="message" rows="4" placeholder="Cuéntame un poco sobre tu idea..." required></textarea>
+                    <button class="button button-primary form-submit" type="submit">Preparar correo <span aria-hidden="true">↗</span></button>
+                    <p class="form-note">Al enviar, se abrirá tu aplicación de correo con el mensaje preparado.</p>
+                    <p class="form-feedback" id="form-feedback" role="status"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer section-shell">
+        <a class="brand footer-brand" href="#inicio"><span class="brand-mark">&lt;/&gt;</span><span id="footer-name">Mi portafolio</span></a>
+        <p>Diseñado y desarrollado con <span class="heart">♥</span> y mucho café.</p>
+        <p>© <span id="current-year"></span> <span id="copyright-name">Tu Nombre</span>. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
